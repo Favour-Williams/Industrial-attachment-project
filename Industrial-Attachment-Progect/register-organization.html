@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register-attachment.css" />
+  </head>
+  <body>
+    <div class="con">
+        <img src="download (1).png" alt="ub logo"/>
+    </div>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Enter Organization Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="email">Enter Organization Email: <input id="email" name="email" type="email" required /></label>
+        <label for="address">Enter Organization address: <input id="address" name="address" type="text" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="numberr">Enter Phone Number: <input id="numberr" name="numberr" type="number" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">Preferences:
+          <p >Location:</p>
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">Gaborone</option>
+            <option value="2">FrancisTown/option>
+            <option value="3">Labatse</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <fieldset style="margin-top: 23px;">
+            <legend>Skill type (select 3 required)</legend>
+            <label for="personal-account"><input id="personal-account" type="checkbox" name="account-type" class="inline"/> C</label>
+            <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" /> C++</label>
+            <label for="personal-account"><input id="personal-account" type="checkbox" name="account-type" class="inline"  /> Java</label>
+            <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" /> Other</label>
+        </fieldset>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
