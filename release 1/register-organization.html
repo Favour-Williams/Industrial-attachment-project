@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register-attachment.css" />
+  </head>
+  <body>
+    <div class="con">
+        <img src="download (1).png" alt="ub logo"/>
+    </div>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action="connectorg.php">
+      <fieldset>
+        <label for="orgName">Enter Organization Name: <input id="orgName" name="orgName" type="text" required /></label>
+        <label for="supervisorName">Enter Supervisor full Name: <input id="supervisorName" name="supervisorName" type="text" required /></label>
+        <label for="supervisorEmail">Enter Supervisor email: <input id="supervisorEmail" name="supervisorEmail" type="text" required /></label>
+        <label for="email">Enter Organization Email: <input id="orgEmail" name="orgEmail" type="text" required /></label>
+        <label for="address">Enter Organization address: <input id="address" name="address" type="text" required /></label>
+        <label for="password">Create a New Password: <input id="password" name="password" type="password" required /></label>
+        <label for="phoneNumber">Enter Phone Number: <input id="phoneNumber" name="phoneNumber" type="text" required /></label>
+        <label for="companyLogo">Upload company logo: <input id="companyLogo" type="file" name="file" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">Preferences:
+          <p >Location:</p>
+          <select id="location" name="location">
+            <option value="">(select one)</option>
+            <option value="1">Gaborone</option>
+            <option value="2">FrancisTown</option>
+            <option value="3">Lobatse</option>
+            <option value="4">Other</option>
+          </select>
+
+          <p >What type of expertise are you looking for:</p>
+          <select id="typeOfWork" name="typeOfWork">
+            <option value="">(select one)</option>
+            <option value="1">Data Analyst</option>
+            <option value="2">Full Stack Developer</option>
+            <option value="3">Back End Developer</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <input type="hidden" id="orgId" name="orgId" value="">
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
